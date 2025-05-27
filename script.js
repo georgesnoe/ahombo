@@ -19,4 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
             ecriture_index++;
         }
     }, 100);
+
+    let menu_toggle = document.getElementById("menu-toggle");
+    let menu = document.getElementById("menu");
+    menu_toggle.onclick = function () {
+        if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+        } else {
+            menu.classList.add("hidden");
+        }
+    }
 })
